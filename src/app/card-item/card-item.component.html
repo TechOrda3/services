@@ -1,0 +1,4 @@
+<ng-container *ngIf="product">
+  <pre><code>{{ product | json }}</code></pre>
+  <button (click)="productService.addFavourites(product)">{{'Add to Favourites' | uppercase}}</button>
+</ng-container>
